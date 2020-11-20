@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/c26a9ce30c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <br />
+      <div class="card border-info mb-3" id="body-container">
+        <div class="card-body">
+          <div class="card border-info mb-3">
+            <div class="card-body">
+              <form id="search-city-form">
+                <div class="row">
+                  <div class="col-8">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Search for your city"
+                      id="search-city"
+                    />
+                  </div>
+                  <div class="col-2">
+                    <input type="submit" 
+                    class="form-control" 
+                    value="Search" 
+                    />
+                  </div>
+                  <div class="col-2">
+                    <input 
+                    type="button" 
+                    class="form-control" 
+                    value="Current" 
+                    id="current-button"/>
+                  </div>
+                </div>
+              </form>
+
+              <br />
+              <div class="row">
+                <div class="col-3">Courtenay</div>
+                <div class="col-3">Campbell River</div>
+                <div class="col-3">Comox</div>
+                <div class="col-3">Nanaimo</div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-info mb-3">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-4" id="current-overall">
+                  <h2><div id="current-city">Cumberland</div></h2>
+                  <span id="current-time">Friday 10:00</span>
+                </div>
+                <div class="col-4"></div>
+                <div class="col-4" id="current-weather-icon">
+                  <i class="fas fa-sun"></i>
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-4" id="precip">
+                  Precipitation: <span id="precipitation">10%</span>  <br />
+                  Wind: <span id="wind-speed">4</span>km/h
+                </div>
+                <div class="col-4"></div>
+                <div class="col-4" id="current-weather">
+                 <span id="temperature">18</span> 
+                <a href="#" id="celsius-link"> °C </a>|
+                <a href="#" id="fahrenheit-link"> °F </a>
+                <br />
+                  <span id="weather-description">Sun & Cloud</span>
+                </div>
+              </div>
+              <br />
+              <div class="row" id="week-days">
+                <div class="col-sm">Sat</div>
+                <div class="col-sm">Sun</div>
+                <div class="col-sm">Mon</div>
+                <div class="col-sm">Tues</div>
+                <div class="col-sm">Wed</div>
+              </div>
+              <div class="row" id="weekly-weather">
+                <div class="col-sm">
+                  <i class="fas fa-cloud-rain"></i>
+                </div>
+                <div class="col-sm">
+                  <i class="fas fa-cloud"></i>
+                </div>
+                <div class="col-sm">
+                  <i class="fas fa-cloud-sun"></i>
+                </div>
+                <div class="col-sm">
+                  <i class="fas fa-cloud"></i>
+                </div>
+                <div class="col-sm">
+                  <i class="fas fa-cloud"></i>
+                </div>
+              </div>
+              <div class="row" id="week-days">
+                <div class="col-sm">17°C</div>
+                <div class="col-sm">15°C</div>
+                <div class="col-sm">20°C</div>
+                <div class="col-sm">17°C</div>
+                <div class="col-sm">18°C</div>
+              </div>
+            </div>
+            <script src="src/index.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

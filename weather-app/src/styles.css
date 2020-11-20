@@ -1,0 +1,51 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#body-container {
+  max-width: 70%;
+  display: block;
+  margin: 0 auto;
+  background: linear-gradient(0.25turn, #05386b, #ebf5e1, #f69d3c);
+}
+.col-2 {
+  text-align: center;
+}
+.col-3 {
+  color: #05386b;
+  text-align: center;
+}
+#search-card {
+  background: #f6faf4;
+}
+#weather-card {
+  background: #f6faf4;
+}
+#current-overall {
+  color: #f69d3c;
+  padding: 10px 0px 0px 10px;
+  font-size: 20px;
+}
+#precip {
+  color: #05386b;
+  font-size: 18px;
+}
+#current-weather-icon {
+  color: #05386b;
+  text-align: center;
+  font-size: 70px;
+}
+#current-weather {
+  color: #05386b;
+  text-align: center;
+  font-size: 18px;
+}
+#week-days {
+  text-align: center;
+  color: #f69d3c;
+  font: 24px;
+}
+#weekly-weather {
+  text-align: center;
+  color: #f69d3c;
+  font: 40px;
+}
