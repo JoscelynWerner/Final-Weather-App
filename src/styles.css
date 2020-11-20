@@ -1,6 +1,9 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+p {
+  text-align: center;
+}
 #body-container {
   max-width: 70%;
   display: block;
